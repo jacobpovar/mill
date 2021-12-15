@@ -109,7 +109,7 @@ jobs:
 
   publish-sonatype:
     # when in master repo: all commits to main branch and all additional tags
-    if: github.repository == 'com-lihaoyi/mill' && ( github.ref == 'refs/heads/main' || (github.ref != 'refs/heads/main' && startsWith( github.ref, 'refs/tags/') ) )
+    if: ( github.ref == 'refs/heads/main' || (github.ref != 'refs/heads/main' && startsWith( github.ref, 'refs/tags/') ) )
     needs: [test, test-windows]
 
     runs-on: ubuntu-latest
@@ -140,7 +140,7 @@ jobs:
 
   release-github:
     # when in master repo: all commits to main branch and all additional tags
-    if: github.repository == 'com-lihaoyi/mill' && ( github.ref == 'refs/heads/main' || (github.ref != 'refs/heads/main' && startsWith( github.ref, 'refs/tags/') ) )
+    if: ( github.ref == 'refs/heads/main' || (github.ref != 'refs/heads/main' && startsWith( github.ref, 'refs/tags/') ) )
     needs: publish-sonatype
     runs-on: ubuntu-latest
 
