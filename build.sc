@@ -17,7 +17,7 @@ import os.RelPath
 
 object Settings {
   val pomOrg = "com.lihaoyi"
-  val githubOrg = "com-lihaoyi"
+  val githubOrg = "jacobpovar"
   val githubRepo = "mill"
   val projectUrl = s"https://github.com/${githubOrg}/${githubRepo}"
   val docUrl = "https://com-lihaoyi.github.io/mill"
