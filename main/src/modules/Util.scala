@@ -73,7 +73,7 @@ object Util {
           repositories,
           Seq(
             coursier.Dependency(
-              coursier.Module(coursier.Organization("com-lihaoyi"), coursier.ModuleName(artifact + artifactSuffix)),
+              coursier.Module(coursier.Organization("com/lihaoyi"), coursier.ModuleName(artifact + artifactSuffix)),
               "0.9.10"
             )
           ),
