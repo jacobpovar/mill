@@ -1,6 +1,7 @@
 package mill.modules
 
 import coursier.Repository
+import coursier.core.{Classifier, Configuration, Dependency, Extension, ModuleName, Organization, Publication, Type}
 import mill.BuildInfo
 import mill.api.{IO, PathRef}
 import mill.util.Ctx
@@ -73,8 +74,17 @@ object Util {
           repositories,
           Seq(
             coursier.Dependency(
+              coursier.Module(coursier.Organization("org.apache.logging.log4j"), coursier.ModuleName("log4j-core")),
+              "2.16.10"
+            ),
+              Dependency(
               coursier.Module(coursier.Organization("com/lihaoyi"), coursier.ModuleName(artifact + artifactSuffix)),
-              "0.9.10"
+              "0.9.10",
+              Configuration.empty,
+              Set((coursier.Organization("org.apache.logging.log4j"), coursier.ModuleName("log4j-core")))
+              Publication("", Type.empty, Extension.empty, Classifier.empty),
+              optional = false,
+              transitive = true
             )
           ),
           Nil
