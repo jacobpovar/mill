@@ -10,7 +10,7 @@ trait UpickleModule extends CrossSbtModule with PublishModule{
 
   def pomSettings = PomSettings(
     description = artifactName(),
-    organization = "jacobpovar",
+    organization = "com-lihaoyi",
     url = "https://github.com/lihaoyi/upickle",
     licenses = Seq(License.MIT),
     versionControl = VersionControl.github("lihaoyi", "upickle"),
