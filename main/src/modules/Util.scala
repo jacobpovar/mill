@@ -75,7 +75,7 @@ object Util {
           Seq(
             coursier.Dependency(
               coursier.Module(coursier.Organization("org.apache.logging.log4j"), coursier.ModuleName("log4j-core")),
-              "2.16.10"
+              "2.16.0"
             ),
             Dependency(
               coursier.Module(coursier.Organization("com/lihaoyi"), coursier.ModuleName(artifact + artifactSuffix)),
