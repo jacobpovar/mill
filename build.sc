@@ -17,9 +17,9 @@ import os.RelPath
 
 object Settings {
   val pomOrg = "com-lihaoyi"
-  val githubOrg = "jacobpovar"
+  val githubOrg = "com-lihaoyi"
   val githubRepo = "mill"
-  val projectUrl = s"https://github.com/${githubOrg}/${githubRepo}"
+  val projectUrl = s"https://github.com/jacobpovar/${githubRepo}"
   val docUrl = "https://com-lihaoyi.github.io/mill"
   // the exact branches containing a doc root
   val docBranches = Seq()
