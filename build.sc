@@ -16,7 +16,7 @@ import mill.modules.Jvm
 import os.RelPath
 
 object Settings {
-  val pomOrg = "com.lihaoyi"
+  val pomOrg = "jacobpovar"
   val githubOrg = "jacobpovar"
   val githubRepo = "mill"
   val projectUrl = s"https://github.com/${githubOrg}/${githubRepo}"
