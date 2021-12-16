@@ -74,7 +74,7 @@ object Util {
           Seq(
             coursier.Dependency(
               coursier.Module(coursier.Organization("com-lihaoyi"), coursier.ModuleName(artifact + artifactSuffix)),
-              millProperty("MILL_VERSION").getOrElse(BuildInfo.millVersion)
+              "0.9.10"
             )
           ),
           Nil
